@@ -1,0 +1,5 @@
+<p *ngFor="let repo of repos">
+  <span [ngClass]="{'red': colored}">Name: {{repo.name}}</span><br/>
+  Description: {{repo.description}} <br/>
+  git: {{repo.git_url}}
+</p>
