@@ -1,3 +1,12 @@
-<p>
-  github-user works!
-</p>
+<h1>Contact Details</h1>
+{{user | json}} <br/>
+Name: <input type="text" [(ngModel)]="user.name"/> <br/>
+Last Name: <input type="text" [(ngModel)]="user.lastname"/> <br/>
+
+<h2>Addresses</h2>
+{{address | json}} <br/>
+Line 1: <input type="text" [(ngModel)]="address.line1"/> <br/>
+Line 2: <input type="text" [(ngModel)]="address.line2"/> <br/>
+Additional <textarea [(ngModel)]="address.additional"></textarea>
+
+<button (click)="handleSubmit()">Tell Submit</button>

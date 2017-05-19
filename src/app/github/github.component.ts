@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./github.component.css'],
 })
 export class GithubComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
   }
 
+  handleSubmit(data) {
+    alert(data);
+  }
 }
